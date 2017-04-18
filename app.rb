@@ -8,5 +8,7 @@ get '/' do
 
   mmdd = Time.now.strftime("%m%d")
 
-  PLAN[mmdd].merge(mmdd: mmdd).to_json
+  PLAN[mmdd].merge(
+    mmdd: mmdd
+  ).to_json
 end
