@@ -1,6 +1,6 @@
 # Script to scrape the M'Chenye Bible reading plan from
 # http://hippocampusextensions.com/mcheyneplan/ and convert
-# it to JSON, then saves it as `plan.json`.
+# it to JSON, then save it as `plan.json`.
 
 require 'nokogiri'
 require 'json'
