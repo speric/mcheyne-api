@@ -6,8 +6,7 @@ A Sinatra app that returns the current day's readings from [Robert Murray M'Chey
 ```
 git clone git@github.com:speric/mcheyne-api.git
 cd mcheyne-api
-bundle install
-rackup
+script/server
 ```
 
 The app will now be available at [http://localhost:9292](http://localhost:9292)
