@@ -10,6 +10,7 @@ Bundler.require
 require 'minitest/autorun'
 require 'minitest/spec'
 require 'rack/test'
+require 'timecop'
 
 require_relative '../app'
 
