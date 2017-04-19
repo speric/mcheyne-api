@@ -31,13 +31,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  minitest
-  nokogiri
-  rack-test
-  rake
-  sinatra
-  sinatra-contrib
-  timecop
+  minitest (~> 5.10)
+  nokogiri (~> 1.7)
+  rack-test (~> 0.6)
+  rake (~> 11.3)
+  sinatra (~> 1.4)
+  sinatra-contrib (~> 1.4)
+  timecop (~> 0.8)
 
 BUNDLED WITH
    1.14.6
