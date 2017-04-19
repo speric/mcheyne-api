@@ -21,7 +21,6 @@ describe "GET /" do
 end
 
 describe "GET /:mm/:dd" do
-
   it "should accept a date" do
     data = api :get, '/04/22'
 
