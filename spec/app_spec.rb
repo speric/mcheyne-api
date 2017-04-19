@@ -8,12 +8,15 @@ end
 
 describe "GET /" do
   it "should render JSON" do
+    Timecop.freeze(Time.local(2017, 4, 22))
     data = api :get, '/'
 
     assert_equal 200, last_response.status
 
     keys = %w(family secret mmdd)
     assert_equal keys, data.keys
+
+    assert_equal "0422", data['mmdd']
   end
 end
 
