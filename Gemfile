@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.4'
-gem 'nokogiri', '~> 1.7'
 gem 'rake', '~> 11.3'
 
 group :development do
