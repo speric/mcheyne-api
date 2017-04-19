@@ -18,8 +18,11 @@ class MiniTest::Spec
 
   def api(method, path, params: {})
     response = send(method, path, params)
+    if response.status == 200 && json = response.body
+      return JSON.parse(response.body)
+    end
 
-    JSON.parse(response.body)
+    nil
   end
 end
 
