@@ -8,7 +8,22 @@ get '/' do
 
   mmdd = Time.now.strftime("%m%d")
 
-  PLAN[mmdd].merge(
+  deliver mmdd
+end
+
+get '/:mm/:dd' do
+  mm = params[:mm].rjust(2, '0')
+  dd = params[:dd].rjust(2, '0')
+
+  deliver(mm + dd)
+end
+
+def deliver(mmdd)
+  data = PLAN[mmdd]
+
+  halt(404) unless data
+
+  data.merge(
     mmdd: mmdd
   ).to_json
 end
