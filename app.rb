@@ -1,4 +1,5 @@
 require 'sinatra'
+require "sinatra/reloader" if development?
 require 'json'
 
 PLAN = JSON.parse(File.read('plan.json')).freeze
